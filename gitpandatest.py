@@ -3,9 +3,9 @@ import numpy as np
 import lifelines
 import matplotlib.pyplot as plt
 
-threshold = 100
-repo = Repository(working_dir='git://github.com/scikit-learn/scikit-learn.git', verbose=True)
-fch = repo.file_change_history(limit=100000, extensions=['py', 'pyx', 'h', 'c', 'cpp'])
+threshold = 20
+repo = Repository(working_dir='git://github.com/ogr3/race-management-system.git', verbose=True)
+fch = repo.file_change_history(limit=100000, extensions=['py', 'pyx', 'h', 'c', 'cpp', 'java', 'xml'])
 fch['file_owner'] = ''
 fch['refactor'] = 0
 fch['timestamp'] = fch.index.astype(np.int64) // (24 * 3600 * 10**9)
