@@ -1,0 +1,4 @@
+git-pandas
+lifelines
+matplotlib
+gitpython
