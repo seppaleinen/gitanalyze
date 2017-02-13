@@ -47,7 +47,7 @@ for filename in set(fch['file_owner'].values):
 plt.title('Survival function of file owners (thres=%s)' % (threshold, ))
 plt.xlabel('Lifetime (days)')
 #plt.show()
-plt.savefig('example', dpi=None, facecolor='w', edgecolor='w',
+plt.savefig('david', dpi=None, facecolor='w', edgecolor='w',
             orientation='portrait', papertype=None, format=None,
             transparent=False, bbox_inches=None, pad_inches=0.1,
             frameon=None)
